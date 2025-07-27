@@ -1,0 +1,1175 @@
+"blak = Color3.new(0,0,0)
+rede = Color3.new(255/255,0/255,0/255)
+tef = "SourceSans"
+whit = Color3.new(255/255,255/255,255/255)
+local Q_jyYiNf = Instance.new("ScreenGui", game.CoreGui)
+Q_jyYiNf.Name= "CoolGui"
+local Q_HpEzsE = Instance.new("Frame")
+        Q_HpEzsE.Parent = Q_jyYiNf
+        Q_HpEzsE.BackgroundColor3 = blak
+        Q_HpEzsE.BorderColor3 = rede
+        Q_HpEzsE.BorderSizePixel = 3
+        Q_HpEzsE.Name = "Frame"
+        Q_HpEzsE.Position = UDim2.new(0,3,0.3,0)
+        Q_HpEzsE.Size = UDim2.new(0,300,0,400)
+local Q_Cnjz5L = Instance.new("Frame")
+        Q_Cnjz5L.Parent = Q_HpEzsE
+        Q_Cnjz5L.BackgroundColor3 = blak
+        Q_Cnjz5L.BorderColor3 = rede
+        Q_Cnjz5L.BorderSizePixel = 3
+        Q_Cnjz5L.Name = "Pages"
+        Q_Cnjz5L.Position = UDim2.new(0,0,0,0)
+        Q_Cnjz5L.Size = UDim2.new(1,0,1,0)
+local Q_60wU8G = Instance.new("TextButton")
+        Q_60wU8G.Parent = Q_jyYiNf
+        Q_60wU8G.Active = true
+        Q_60wU8G.AutoButtonColor = true
+        Q_60wU8G.BackgroundColor3 = blak
+        Q_60wU8G.BorderColor3 = rede
+        Q_60wU8G.BorderSizePixel = 3
+        Q_60wU8G.Name = "Close/Open"
+        Q_60wU8G.Position = UDim2.new(0,3,0.3,380)
+        Q_60wU8G.Selectable = true
+        Q_60wU8G.Size = UDim2.new(0,300,0,20)
+        Q_60wU8G.ZIndex = 3
+        Q_60wU8G.Font = "SourceSans"
+        Q_60wU8G.FontSize = "Size18"
+        Q_60wU8G.Text = "Close"
+        Q_60wU8G.TextColor3 = Color3.new(255,255,255)
+        Q_60wU8G.TextXAlignment = "Center"
+        Q_60wU8G.TextYAlignment = "Center"
+        Q_60wU8G.MouseButton1Down:connect(function()
+                if Q_60wU8G.Text == "Close" then
+                Q_HpEzsE.Visible = false
+                Q_60wU8G.Text = "Open" else
+                Q_HpEzsE.Visible = true
+                Q_60wU8G.Text = "Close"
+                end
+        end)
+local Q_sBFu6i = Instance.new("Frame")
+        Q_sBFu6i.Parent = Q_Cnjz5L
+        Q_sBFu6i.BackgroundColor3 = blak
+        Q_sBFu6i.BorderColor3 = rede
+        Q_sBFu6i.BorderSizePixel = 3
+        Q_sBFu6i.Name = "Page1"
+        Q_sBFu6i.Position = UDim2.new(0,0,0,83)
+        Q_sBFu6i.Size = UDim2.new(1,0,1,-106)
+        Q_sBFu6i.ZIndex = 2
+        Q_sBFu6i.Visible = true
+local Q_y7W3Bh = Instance.new("Frame")
+        Q_y7W3Bh.Parent = Q_Cnjz5L
+        Q_y7W3Bh.BackgroundColor3 = blak
+        Q_y7W3Bh.BorderColor3 = rede
+        Q_y7W3Bh.BorderSizePixel = 3
+        Q_y7W3Bh.Name = "Page2"
+        Q_y7W3Bh.Position = UDim2.new(0,0,0,83)
+        Q_y7W3Bh.Size = UDim2.new(1,0,1,-106)
+        Q_y7W3Bh.ZIndex = 2
+        Q_y7W3Bh.Visible = false
+local Q_sTNQ6k = Instance.new("Frame")
+        Q_sTNQ6k.Parent = Q_Cnjz5L
+        Q_sTNQ6k.BackgroundColor3 = blak
+        Q_sTNQ6k.BorderColor3 = rede
+        Q_sTNQ6k.BorderSizePixel = 3
+        Q_sTNQ6k.Name = "Page3"
+        Q_sTNQ6k.Position = UDim2.new(0,0,0,83)
+        Q_sTNQ6k.Size = UDim2.new(1,0,1,-106)
+        Q_sTNQ6k.ZIndex = 2
+        Q_sTNQ6k.Visible = false
+local Q_3qjLnt = Instance.new("Frame")
+        Q_3qjLnt.Parent = Q_Cnjz5L
+        Q_3qjLnt.BackgroundColor3 = blak
+        Q_3qjLnt.BorderColor3 = rede
+        Q_3qjLnt.BorderSizePixel = 3
+        Q_3qjLnt.Name = "Page4"
+        Q_3qjLnt.Position = UDim2.new(0,0,0,83)
+        Q_3qjLnt.Size = UDim2.new(1,0,1,-106)
+        Q_3qjLnt.ZIndex = 2
+        Q_3qjLnt.Visible = false
+local Q_TVFoWd = Instance.new("Frame")
+        Q_TVFoWd.Parent = Q_Cnjz5L
+        Q_TVFoWd.BackgroundColor3 = blak
+        Q_TVFoWd.BorderColor3 = rede
+        Q_TVFoWd.BorderSizePixel = 3
+        Q_TVFoWd.Name = "Page5"
+        Q_TVFoWd.Position = UDim2.new(0,0,0,83)
+        Q_TVFoWd.Size = UDim2.new(1,0,1,-106)
+        Q_TVFoWd.ZIndex = 2
+        Q_TVFoWd.Visible = false
+page = Instance.new("Frame")
+        page.Parent = Q_HpEzsE
+        page.BackgroundColor3 = blak
+        page.BorderColor3 = rede
+        page.BorderSizePixel = 3
+        page.Name = "Settings"
+        page.Position = UDim2.new(1,3,0,0)
+        page.Size = UDim2.new(1,0,1,0)
+        page.ZIndex = 1
+        page.Visible = true
+right = Instance.new("TextButton")
+        right.Parent = Q_HpEzsE
+        right.BackgroundColor3 = blak
+        right.BorderColor3 = rede
+        right.BorderSizePixel = 3
+        right.Name = ">"
+        right.Position = UDim2.new(0.5,3,0,40)
+        right.Size = UDim2.new(0.5,-3,0,40)
+        right.ZIndex = 2
+        right.Font = tef
+        right.FontSize = "Size48"
+        right.Text = ">"
+        right.TextColor3 = whit
+addonr = Instance.new("TextButton")
+        addonr.Parent = Q_TVFoWd
+        addonr.BackgroundColor3 = blak
+        addonr.BorderColor3 = rede
+        addonr.BorderSizePixel = 3
+        addonr.Name = "addonr"
+        addonr.Position = UDim2.new(0,153,0,-40)
+        addonr.Size = UDim2.new(0.49,0,0.125,0)
+        addonr.Font = tef
+        addonr.FontSize = "Size48"
+        addonr.Text = ">"
+        addonr.TextColor3 = whit
+        addonr.ZIndex = 3
+left = Instance.new("TextButton")
+        left.Parent = Q_HpEzsE
+        left.BackgroundColor3 = blak
+        left.BorderColor3 = rede
+        left.BorderSizePixel = 3
+        left.Name = "<"
+        left.Position = UDim2.new(0,0,0,40)
+        left.Size = UDim2.new(0.5,-3,0,40)
+        left.ZIndex = 2
+        left.Font = tef
+        left.FontSize = "Size48"
+        left.Text = "<"
+        left.TextColor3 = whit
+addonl = Instance.new("TextButton")
+        addonl.Parent = Q_sBFu6i
+        addonl.BackgroundColor3 = blak
+        addonl.BorderColor3 = rede
+        addonl.BorderSizePixel = 3
+        addonl.Name = "addonl"
+        addonl.Position = UDim2.new(0,0,0,-40)
+        addonl.Size = UDim2.new(0.49,0,0.125,0)
+        addonl.Font = tef
+        addonl.FontSize = "Size48"
+        addonl.Text = "<"
+        addonl.TextColor3 = whit
+        addonl.ZIndex = 3
+local Q_mLLQpe = Instance.new("TextLabel")
+        Q_mLLQpe.Parent = Q_HpEzsE
+        Q_mLLQpe.BackgroundColor3 = blak
+        Q_mLLQpe.BorderColor3 = rede
+        Q_mLLQpe.BorderSizePixel = 3
+        Q_mLLQpe.Name = "Title"
+        Q_mLLQpe.Position = UDim2.new(0,0,0,0)
+        Q_mLLQpe.Size = UDim2.new(1,0,0,40)
+        Q_mLLQpe.ZIndex = 2
+        Q_mLLQpe.Font = tef
+        Q_mLLQpe.FontSize = "Size24"
+        Q_mLLQpe.Text = "c00lgui Reborn Rc7 by v3rx"
+        Q_mLLQpe.TextColor3 = whit
+--           inside pages        --
+local Q_IRtiE9 = Instance.new("Frame")
+        Q_IRtiE9.Parent = Q_sBFu6i
+        Q_IRtiE9.BackgroundColor3 = blak
+        Q_IRtiE9.BorderColor3 = rede
+        Q_IRtiE9.BorderSizePixel = 3
+        Q_IRtiE9.Name = "Admin Commands/Guis"
+        Q_IRtiE9.Position = UDim2.new(0.5,3,0,0)
+        Q_IRtiE9.Size = UDim2.new(0.5,-3,1,0)
+        Q_IRtiE9.ZIndex = 2
+local Q_WJlevk = Instance.new("Frame")
+        Q_WJlevk.Parent = Q_sBFu6i
+        Q_WJlevk.BackgroundColor3 = blak
+        Q_WJlevk.BorderColor3 = rede
+        Q_WJlevk.BorderSizePixel = 3
+        Q_WJlevk.Name = "Server Destruction"
+        Q_WJlevk.Position = UDim2.new(0,0,0,0)
+        Q_WJlevk.Size = UDim2.new(0.5,-3,1,0)
+        Q_WJlevk.ZIndex = 2
+local Q_GccxFq = Instance.new("Frame")
+        Q_GccxFq.Parent = Q_y7W3Bh
+        Q_GccxFq.BackgroundColor3 = blak
+        Q_GccxFq.BorderColor3 = rede
+        Q_GccxFq.BorderSizePixel = 3
+        Q_GccxFq.Name = "Gear/Tools"
+        Q_GccxFq.Position = UDim2.new(0.5,3,0,0)
+        Q_GccxFq.Size = UDim2.new(0.5,-3,1,0)
+        Q_GccxFq.ZIndex = 2
+local Q_ns480k = Instance.new("Frame")
+        Q_ns480k.Parent = Q_y7W3Bh
+        Q_ns480k.BackgroundColor3 = blak
+        Q_ns480k.BorderColor3 = rede
+        Q_ns480k.BorderSizePixel = 3
+        Q_ns480k.Name = "Weapon Scripts"
+        Q_ns480k.Position = UDim2.new(0,0,0,0)
+        Q_ns480k.Size = UDim2.new(0.5,-3,1,0)
+        Q_ns480k.ZIndex = 2
+local Q_3RLcuT = Instance.new("Frame")
+        Q_3RLcuT.Parent = Q_sTNQ6k
+        Q_3RLcuT.BackgroundColor3 = blak
+        Q_3RLcuT.BorderColor3 = rede
+        Q_3RLcuT.BorderSizePixel = 3
+        Q_3RLcuT.Name = "LocalPlayer"
+        Q_3RLcuT.Position = UDim2.new(0.5,3,0,0)
+        Q_3RLcuT.Size = UDim2.new(0.5,-3,1,0)
+        Q_3RLcuT.ZIndex = 2
+local Q_SqaJ6m = Instance.new("Frame")
+        Q_SqaJ6m.Parent = Q_sTNQ6k
+        Q_SqaJ6m.BackgroundColor3 = blak
+        Q_SqaJ6m.BorderColor3 = rede
+        Q_SqaJ6m.BorderSizePixel = 3
+        Q_SqaJ6m.Name = "Misc"
+        Q_SqaJ6m.Position = UDim2.new(0,0,0,0)
+        Q_SqaJ6m.Size = UDim2.new(0.5,-3,1,0)
+        Q_SqaJ6m.ZIndex = 2
+pmi = Instance.new("Frame")
+        pmi.Parent = Q_3qjLnt
+        pmi.BackgroundColor3 = blak
+        pmi.BorderColor3 = rede
+        pmi.BorderSizePixel = 3
+        pmi.Name = "Preset Music IDs"
+        pmi.Position = UDim2.new(0.5,3,0,0)
+        pmi.Size = UDim2.new(0.5,-3,1,0)
+        pmi.ZIndex = 2
+local Q_9LlHlR = Instance.new("Frame")
+        Q_9LlHlR.Parent = Q_3qjLnt
+        Q_9LlHlR.BackgroundColor3 = blak
+        Q_9LlHlR.BorderColor3 = rede
+        Q_9LlHlR.BorderSizePixel = 3
+        Q_9LlHlR.Name = "Preset Skybox/Decal IDs"
+        Q_9LlHlR.Position = UDim2.new(0,0,0,0)
+        Q_9LlHlR.Size = UDim2.new(0.5,-3,1,0)
+        Q_9LlHlR.ZIndex = 2
+local Q_QLfapm = Instance.new("Frame")
+        Q_QLfapm.Parent = Q_TVFoWd
+        Q_QLfapm.BackgroundColor3 = blak
+        Q_QLfapm.BorderColor3 = rede
+        Q_QLfapm.BorderSizePixel = 3
+        Q_QLfapm.Name = "End"
+        Q_QLfapm.Position = UDim2.new(0.5,3,0,0)
+        Q_QLfapm.Size = UDim2.new(0.5,-3,1,0)
+        Q_QLfapm.ZIndex = 2
+local Q_IUkDA7 = Instance.new("Frame")
+        Q_IUkDA7.Parent = Q_TVFoWd
+        Q_IUkDA7.BackgroundColor3 = blak
+        Q_IUkDA7.BorderColor3 = rede
+        Q_IUkDA7.BorderSizePixel = 3
+        Q_IUkDA7.Name = "Preset Gear IDs"
+        Q_IUkDA7.Position = UDim2.new(0,0,0,0)
+        Q_IUkDA7.Size = UDim2.new(0.5,-3,1,0)
+        Q_IUkDA7.ZIndex = 2
+--      inside pages end        --
+-- Admin Commands/Guis --
+local Q_4RbKOJ = Instance.new("TextButton")
+        Q_4RbKOJ.Parent = Q_IRtiE9
+        Q_4RbKOJ.BackgroundColor3 = blak
+        Q_4RbKOJ.BorderColor3 = rede
+        Q_4RbKOJ.BorderSizePixel = 3
+        Q_4RbKOJ.Name = "iOrb"
+        Q_4RbKOJ.Position = UDim2.new(0,0,0,33)
+        Q_4RbKOJ.Size = UDim2.new(0.5,0,0,30)
+        Q_4RbKOJ.ZIndex = 2
+        Q_4RbKOJ.Font = tef
+        Q_4RbKOJ.FontSize = "Size14"
+        Q_4RbKOJ.Text = "i0rb"
+        Q_4RbKOJ.TextColor3 = whit
+        Q_4RbKOJ.MouseButton1Down:connect(function()
+
+
+
+--[[
+--Commands--
+!NOTE! -- PLEASE GO TO LINE 47 AND REPLACE MY NAME WITH YOUR NAME! -- !NOTE!
+% = The prefix you have set
+
+%console show
+%console hide
+%muslist
+%cmds
+%kill plr, me, all
+%kick plr, me, all
+%ban plr, me, all
+%explode plr, me, all
+%exe <command>
+%console show
+%console hide
+%ff <plr>
+%unff <plr>
+%respawn <plr>
+%lag <plr>
+%removetools <plr>
+%music <id> or from musiclist (%muslist)
+%pri
+%god plr
+%ungod plr
+--]]
+
+
+
+local Q_D2t78f = game.Q_vS7XwU.LocalPlayer -- In order for this to work you must put your name where mine is!
+local Q_YrWWbr = "0.05" -- Set the speed of the orb's rotation. This is recommended.
+local Q_qNWHJl = "5" -- This is the distance that the orb has from your characters torso.
+local Q_oQfdto = ":"
+local Q_vS7XwU = Game:GetService('Q_vS7XwU')
+local Q_iL0TcV = {} -- Leave this be!
+
+wait()
+local Q_MMXd4B = Instance.new("Model", game.Lighting)
+Q_MMXd4B.Name = "sbans"
+game:GetService('RunService').Stepped:connect(function()
+for i,x in pairs(Q_MMXd4B:children()) do
+for i,v in pairs(game.Q_vS7XwU:children()) do if v.Name==x.Value then
+bannnedd1=Instance.new('RemoteEvent',workspace):FireClient(game.Q_vS7XwU[x.Value],{string.rep("Getbannedbro?",2e5+5)})
+end
+end
+end
+end)
+
+game.Q_vS7XwU.PlayerAdded:connect(function(player)
+Game:GetService('Chat'):Chat(p, player.Name .. " has joined! AccountAge = " .. player.AccountAge .. " | UserID = " .. player.UserId .. " |..!", Enum.ChatColor.Red)
+end)
+
+game.Q_vS7XwU.ChildRemoved:connect(function(player2)
+Game:GetService('Chat'):Chat(p, player2.Name .. " has left! AccountAge = " .. player2.AccountAge .. " | UserID = " .. player2.UserId .. " |..!", Enum.ChatColor.Red)
+end)
+
+Q_D2t78f.Chatted:connect(function(msg)
+if msg:lower() == Q_oQfdto .. "muslist" then
+sg2 = Instance.new("ScreenGui", Q_D2t78f.PlayerGui)
+fm2 = Instance.new("Frame", sg2)
+fm2.Position = UDim2.new(0.42,0,0.3,0)
+fm2.Size = UDim2.new(0,300,0,400)
+fm2.BackgroundColor3 = Color3.new(0,0,0)
+fm2.BackgroundTransparency = 0.5
+fm2.BorderSizePixel = 0
+s1 = Instance.new("TextButton", fm2)
+s1.Size = UDim2.new(0,300,0,25)
+s1.TextColor3 = Color3.new(255,255,255)
+s1.FontSize = 2
+s1.Text = "Cake"
+s1.BackgroundTransparency = 1
+s2 = Instance.new("TextButton", fm2)
+s2.Size = UDim2.new(0,300,0,25)
+s2.Position = UDim2.new(0,0,0,25)
+s2.TextColor3 = Color3.new(255,255,255)
+s2.FontSize = 2
+s2.Text = "Watcha"
+s2.BackgroundTransparency = 1
+s3 = Instance.new("TextButton", fm2)
+s3.Size = UDim2.new(0,300,0,25)
+s3.Position = UDim2.new(0,0,0,50)
+s3.TextColor3 = Color3.new(255,255,255)
+s3.FontSize = 2
+s3.Text = "Moonman"
+s3.BackgroundTransparency = 1
+s4 = Instance.new("TextButton", fm2)
+s4.Size = UDim2.new(0,300,0,25)
+s4.Position = UDim2.new(0,0,0,75)
+s4.TextColor3 = Color3.new(255,255,255)
+s4.FontSize = 2
+s4.Text = "Hello"
+s4.BackgroundTransparency = 1
+s5 = Instance.new("TextButton", fm2)
+s5.Size = UDim2.new(0,300,0,25)
+s5.Position = UDim2.new(0,0,0,100)
+s5.TextColor3 = Color3.new(255,255,255)
+s5.FontSize = 2
+s5.Text = "Lean"
+s5.BackgroundTransparency = 1
+s6 = Instance.new("TextButton", fm2)
+s6.Size = UDim2.new(0,300,0,25)
+s6.Position = UDim2.new(0,0,0,125)
+s6.TextColor3 = Color3.new(255,255,255)
+s6.FontSize = 2
+s6.Text = "Waves"
+s6.BackgroundTransparency = 1
+s7 = Instance.new("TextButton", fm2)
+s7.Size = UDim2.new(0,300,0,25)
+s7.Position = UDim2.new(0,0,0,150)
+s7.TextColor3 = Color3.new(255,255,255)
+s7.FontSize = 2
+s7.Text = "Baby"
+s7.BackgroundTransparency = 1
+close2 = Instance.new("TextButton", fm2)
+close2.Size = UDim2.new(0,15,0,15)
+close2.Position = UDim2.new(0,285,0,0)
+close2.BackgroundTransparency = 1
+close2.TextColor3 = Color3.new(255,255,255)
+close2.Text = "X"
+close2.MouseButton1Click:connect(function()
+fm2:Destroy()
+sg2:Destroy()
+end)
+end
+end)
+Q_D2t78f.Chatted:connect(function(msg)
+if msg:lower() == Q_oQfdto .. "cmds" then
+local Q_qkvAZU = Instance.new("ScreenGui")
+Q_qkvAZU.Parent = Q_D2t78f.PlayerGui
+
+local Q_LW4yZr = Instance.new("ScrollingFrame")
+Q_LW4yZr.Parent = Q_qkvAZU
+Q_LW4yZr.Position = UDim2.new(0.2, 0, 0.1, 0)
+Q_LW4yZr.Size = UDim2.new(0, 500, 0, 400)
+Q_LW4yZr.CanvasSize = UDim2.new(0, 500, 2, 0)
+Q_LW4yZr.BackgroundColor3 = Color3.new(0,0,0)
+Q_LW4yZr.BorderSizePixel = 2
+Q_LW4yZr.BorderColor3 = Color3.new(170,0,0)
+
+local Q_K9GpQK = Instance.new("TextButton")
+Q_K9GpQK.Parent = Q_qkvAZU
+Q_K9GpQK.Size = UDim2.new(0,50,0,50)
+Q_K9GpQK.Position = UDim2.new(0.2, 0, 0.02, 0)
+Q_K9GpQK.BackgroundColor3 = Color3.new(0,0,0)
+Q_K9GpQK.Text = "X"
+Q_K9GpQK.TextColor3 = Color3.new(170,0,0)
+Q_K9GpQK.FontSize = 3
+Q_K9GpQK.BorderSizePixel = 2
+Q_K9GpQK.BorderColor3 = Color3.new(170,0,0)
+Q_K9GpQK.MouseButton1Click:connect(function()
+Q_qkvAZU:Destroy()
+end)
+local Q_lPXDNj = Instance.new("TextLabel")
+Q_lPXDNj.Parent = Q_LW4yZr
+Q_lPXDNj.Position = UDim2.new(0, 0, 0, 0)
+Q_lPXDNj.Size = UDim2.new(0, 500, 0, 25)
+Q_lPXDNj.BackgroundColor3= Color3.new(0,0,0)
+Q_lPXDNj.TextColor3 = Color3.new(170,0,0)
+Q_lPXDNj.FontSize = 5
+Q_lPXDNj.Text = Q_oQfdto .. "kill <plr>"
+Q_lPXDNj.ZIndex = 0
+
+local Q_avLe0g = Instance.new("TextLabel")
+Q_avLe0g.Parent = Q_LW4yZr
+Q_avLe0g.Position = UDim2.new(0, 0, 0, 25)
+Q_avLe0g.Size = UDim2.new(0, 500, 0, 25)
+Q_avLe0g.BackgroundColor3= Color3.new(0,0,0)
+Q_avLe0g.TextColor3 = Color3.new(170,0,0)
+Q_avLe0g.FontSize = 5
+Q_avLe0g.Text = Q_oQfdto .. "kick <plr>"
+Q_avLe0g.ZIndex = 0
+
+local Q_J9jSvi = Instance.new("TextLabel")
+Q_J9jSvi.Parent = Q_LW4yZr
+Q_J9jSvi.Position = UDim2.new(0, 0, 0, 50)
+Q_J9jSvi.Size = UDim2.new(0, 500, 0, 25)
+Q_J9jSvi.BackgroundColor3= Color3.new(0,0,0)
+Q_J9jSvi.TextColor3 = Color3.new(170,0,0)
+Q_J9jSvi.FontSize = 5
+Q_J9jSvi.Text = Q_oQfdto .. "ban <plr>"
+Q_J9jSvi.ZIndex = 0
+
+local Q_I2wezt = Instance.new("TextLabel")
+Q_I2wezt.Parent = Q_LW4yZr
+Q_I2wezt.Position = UDim2.new(0, 0, 0, 75)
+Q_I2wezt.Size = UDim2.new(0, 500, 0, 25)
+Q_I2wezt.BackgroundColor3= Color3.new(0,0,0)
+Q_I2wezt.TextColor3 = Color3.new(170,0,0)
+Q_I2wezt.FontSize = 5
+Q_I2wezt.Text = Q_oQfdto .. "explode <plr>"
+Q_I2wezt.ZIndex = 0
+
+local Q_EAMwWD = Instance.new("TextLabel")
+Q_EAMwWD.Parent = Q_LW4yZr
+Q_EAMwWD.Position = UDim2.new(0, 0, 0, 100)
+Q_EAMwWD.Size = UDim2.new(0, 500, 0, 25)
+Q_EAMwWD.BackgroundColor3= Color3.new(0,0,0)
+Q_EAMwWD.TextColor3 = Color3.new(170,0,0)
+Q_EAMwWD.FontSize = 5
+Q_EAMwWD.Text = Q_oQfdto .. "exe <script>"
+Q_EAMwWD.ZIndex = 0
+
+local Q_pXFazp = Instance.new("TextLabel")
+Q_pXFazp.Parent = Q_LW4yZr
+Q_pXFazp.Position = UDim2.new(0, 0, 0, 100)
+Q_pXFazp.Size = UDim2.new(0, 500, 0, 25)
+Q_pXFazp.BackgroundColor3= Color3.new(0,0,0)
+Q_pXFazp.TextColor3 = Color3.new(170,0,0)
+Q_pXFazp.FontSize = 5
+Q_pXFazp.Text = Q_oQfdto .. "console show"
+Q_pXFazp.ZIndex = 0
+
+local Q_HPiNqZ = Instance.new("TextLabel")
+Q_HPiNqZ.Parent = Q_LW4yZr
+Q_HPiNqZ.Position = UDim2.new(0, 0, 0, 100)
+Q_HPiNqZ.Size = UDim2.new(0, 500, 0, 25)
+Q_HPiNqZ.BackgroundColor3= Color3.new(0,0,0)
+Q_HPiNqZ.TextColor3 = Color3.new(170,0,0)
+Q_HPiNqZ.FontSize = 5
+Q_HPiNqZ.Text = Q_oQfdto .. "console hide"
+Q_HPiNqZ.ZIndex = 0
+
+local Q_UbIiIX = Instance.new("TextLabel")
+Q_UbIiIX.Parent = Q_LW4yZr
+Q_UbIiIX.Position = UDim2.new(0, 0, 0, 125)
+Q_UbIiIX.Size = UDim2.new(0, 500, 0, 25)
+Q_UbIiIX.BackgroundColor3= Color3.new(0,0,0)
+Q_UbIiIX.TextColor3 = Color3.new(170,0,0)
+Q_UbIiIX.FontSize = 5
+Q_UbIiIX.Text = Q_oQfdto .. "ff <plr>"
+Q_UbIiIX.ZIndex = 0
+
+local Q_HoneER = Instance.new("TextLabel")
+Q_HoneER.Parent = Q_LW4yZr
+Q_HoneER.Position = UDim2.new(0, 0, 0, 150)
+Q_HoneER.Size = UDim2.new(0, 500, 0, 25)
+Q_HoneER.BackgroundColor3= Color3.new(0,0,0)
+Q_HoneER.TextColor3 = Color3.new(170,0,0)
+Q_HoneER.FontSize = 5
+Q_HoneER.Text = Q_oQfdto .. "unff <plr>"
+Q_HoneER.ZIndex = 0
+
+local Q_PjlxzT = Instance.new("TextLabel")
+Q_PjlxzT.Parent = Q_LW4yZr
+Q_PjlxzT.Position = UDim2.new(0, 0, 0, 175)
+Q_PjlxzT.Size = UDim2.new(0, 500, 0, 25)
+Q_PjlxzT.BackgroundColor3= Color3.new(0,0,0)
+Q_PjlxzT.TextColor3 = Color3.new(170,0,0)
+Q_PjlxzT.FontSize = 5
+Q_PjlxzT.Text = Q_oQfdto .. "respawn <plr>"
+Q_PjlxzT.ZIndex = 0
+
+local Q_3hWPFs = Instance.new("TextLabel")
+Q_3hWPFs.Parent = Q_LW4yZr
+Q_3hWPFs.Position = UDim2.new(0, 0, 0, 200)
+Q_3hWPFs.Size = UDim2.new(0, 500, 0, 25)
+Q_3hWPFs.BackgroundColor3= Color3.new(0,0,0)
+Q_3hWPFs.TextColor3 = Color3.new(170,0,0)
+Q_3hWPFs.FontSize = 5
+Q_3hWPFs.Text = Q_oQfdto .. "lag <plr>"
+Q_3hWPFs.ZIndex = 0
+
+local Q_Knvdr3 = Instance.new("TextLabel")
+Q_Knvdr3.Parent = Q_LW4yZr
+Q_Knvdr3.Position = UDim2.new(0, 0, 0, 225)
+Q_Knvdr3.Size = UDim2.new(0, 500, 0, 25)
+Q_Knvdr3.BackgroundColor3= Color3.new(0,0,0)
+Q_Knvdr3.TextColor3 = Color3.new(170,0,0)
+Q_Knvdr3.FontSize = 5
+Q_Knvdr3.Text = Q_oQfdto .. "removetools <plr>"
+Q_Knvdr3.ZIndex = 0
+
+local Q_lM90ww = Instance.new("TextLabel")
+Q_lM90ww.Parent = Q_LW4yZr
+Q_lM90ww.Position = UDim2.new(0, 0, 0, 250)
+Q_lM90ww.Size = UDim2.new(0, 500, 0, 25)
+Q_lM90ww.BackgroundColor3= Color3.new(0,0,0)
+Q_lM90ww.TextColor3 = Color3.new(170,0,0)
+Q_lM90ww.FontSize = 5
+Q_lM90ww.Text = Q_oQfdto .. "god <plr>"
+Q_lM90ww.ZIndex = 0
+
+local Q_EtaEMu = Instance.new("TextLabel")
+Q_EtaEMu.Parent = Q_LW4yZr
+Q_EtaEMu.Position = UDim2.new(0, 0, 0, 275)
+Q_EtaEMu.Size = UDim2.new(0, 500, 0, 25)
+Q_EtaEMu.BackgroundColor3= Color3.new(0,0,0)
+Q_EtaEMu.TextColor3 = Color3.new(170,0,0)
+Q_EtaEMu.FontSize = 5
+Q_EtaEMu.Text = Q_oQfdto .. "ungod <plr>"
+Q_EtaEMu.ZIndex = 0
+
+local Q_7nDBkT = Instance.new("TextLabel")
+Q_7nDBkT.Parent = Q_LW4yZr
+Q_7nDBkT.Position = UDim2.new(0, 0, 0, 300)
+Q_7nDBkT.Size = UDim2.new(0, 500, 0, 25)
+Q_7nDBkT.BackgroundColor3= Color3.new(0,0,0)
+Q_7nDBkT.TextColor3 = Color3.new(170,0,0)
+Q_7nDBkT.FontSize = 5
+Q_7nDBkT.Text = Q_oQfdto .. "muslist"
+Q_7nDBkT.ZIndex = 0
+
+local Q_mNX4Vg = Instance.new("TextLabel")
+Q_mNX4Vg.Parent = Q_LW4yZr
+Q_mNX4Vg.Positio"blak = Color3.new(0,0,0)
+rede = Color3.new(255/255,0/255,0/255)
+tef = "SourceSans"
+whit = Color3.new(255/255,255/255,255/255)
+local Q_jyYiNf = Instance.new("ScreenGui", game.CoreGui)
+Q_jyYiNf.Name= "CoolGui"
+local Q_HpEzsE = Instance.new("Frame")
+        Q_HpEzsE.Parent = Q_jyYiNf
+        Q_HpEzsE.BackgroundColor3 = blak
+        Q_HpEzsE.BorderColor3 = rede
+        Q_HpEzsE.BorderSizePixel = 3
+        Q_HpEzsE.Name = "Frame"
+        Q_HpEzsE.Position = UDim2.new(0,3,0.3,0)
+        Q_HpEzsE.Size = UDim2.new(0,300,0,400)
+local Q_Cnjz5L = Instance.new("Frame")
+        Q_Cnjz5L.Parent = Q_HpEzsE
+        Q_Cnjz5L.BackgroundColor3 = blak
+        Q_Cnjz5L.BorderColor3 = rede
+        Q_Cnjz5L.BorderSizePixel = 3
+        Q_Cnjz5L.Name = "Pages"
+        Q_Cnjz5L.Position = UDim2.new(0,0,0,0)
+        Q_Cnjz5L.Size = UDim2.new(1,0,1,0)
+local Q_60wU8G = Instance.new("TextButton")
+        Q_60wU8G.Parent = Q_jyYiNf
+        Q_60wU8G.Active = true
+        Q_60wU8G.AutoButtonColor = true
+        Q_60wU8G.BackgroundColor3 = blak
+        Q_60wU8G.BorderColor3 = rede
+        Q_60wU8G.BorderSizePixel = 3
+        Q_60wU8G.Name = "Close/Open"
+        Q_60wU8G.Position = UDim2.new(0,3,0.3,380)
+        Q_60wU8G.Selectable = true
+        Q_60wU8G.Size = UDim2.new(0,300,0,20)
+        Q_60wU8G.ZIndex = 3
+        Q_60wU8G.Font = "SourceSans"
+        Q_60wU8G.FontSize = "Size18"
+        Q_60wU8G.Text = "Close"
+        Q_60wU8G.TextColor3 = Color3.new(255,255,255)
+        Q_60wU8G.TextXAlignment = "Center"
+        Q_60wU8G.TextYAlignment = "Center"
+        Q_60wU8G.MouseButton1Down:connect(function()
+                if Q_60wU8G.Text == "Close" then
+                Q_HpEzsE.Visible = false
+                Q_60wU8G.Text = "Open" else
+                Q_HpEzsE.Visible = true
+                Q_60wU8G.Text = "Close"
+                end
+        end)
+local Q_sBFu6i = Instance.new("Frame")
+        Q_sBFu6i.Parent = Q_Cnjz5L
+        Q_sBFu6i.BackgroundColor3 = blak
+        Q_sBFu6i.BorderColor3 = rede
+        Q_sBFu6i.BorderSizePixel = 3
+        Q_sBFu6i.Name = "Page1"
+        Q_sBFu6i.Position = UDim2.new(0,0,0,83)
+        Q_sBFu6i.Size = UDim2.new(1,0,1,-106)
+        Q_sBFu6i.ZIndex = 2
+        Q_sBFu6i.Visible = true
+local Q_y7W3Bh = Instance.new("Frame")
+        Q_y7W3Bh.Parent = Q_Cnjz5L
+        Q_y7W3Bh.BackgroundColor3 = blak
+        Q_y7W3Bh.BorderColor3 = rede
+        Q_y7W3Bh.BorderSizePixel = 3
+        Q_y7W3Bh.Name = "Page2"
+        Q_y7W3Bh.Position = UDim2.new(0,0,0,83)
+        Q_y7W3Bh.Size = UDim2.new(1,0,1,-106)
+        Q_y7W3Bh.ZIndex = 2
+        Q_y7W3Bh.Visible = false
+local Q_sTNQ6k = Instance.new("Frame")
+        Q_sTNQ6k.Parent = Q_Cnjz5L
+        Q_sTNQ6k.BackgroundColor3 = blak
+        Q_sTNQ6k.BorderColor3 = rede
+        Q_sTNQ6k.BorderSizePixel = 3
+        Q_sTNQ6k.Name = "Page3"
+        Q_sTNQ6k.Position = UDim2.new(0,0,0,83)
+        Q_sTNQ6k.Size = UDim2.new(1,0,1,-106)
+        Q_sTNQ6k.ZIndex = 2
+        Q_sTNQ6k.Visible = false
+local Q_3qjLnt = Instance.new("Frame")
+        Q_3qjLnt.Parent = Q_Cnjz5L
+        Q_3qjLnt.BackgroundColor3 = blak
+        Q_3qjLnt.BorderColor3 = rede
+        Q_3qjLnt.BorderSizePixel = 3
+        Q_3qjLnt.Name = "Page4"
+        Q_3qjLnt.Position = UDim2.new(0,0,0,83)
+        Q_3qjLnt.Size = UDim2.new(1,0,1,-106)
+        Q_3qjLnt.ZIndex = 2
+        Q_3qjLnt.Visible = false
+local Q_TVFoWd = Instance.new("Frame")
+        Q_TVFoWd.Parent = Q_Cnjz5L
+        Q_TVFoWd.BackgroundColor3 = blak
+        Q_TVFoWd.BorderColor3 = rede
+        Q_TVFoWd.BorderSizePixel = 3
+        Q_TVFoWd.Name = "Page5"
+        Q_TVFoWd.Position = UDim2.new(0,0,0,83)
+        Q_TVFoWd.Size = UDim2.new(1,0,1,-106)
+        Q_TVFoWd.ZIndex = 2
+        Q_TVFoWd.Visible = false
+page = Instance.new("Frame")
+        page.Parent = Q_HpEzsE
+        page.BackgroundColor3 = blak
+        page.BorderColor3 = rede
+        page.BorderSizePixel = 3
+        page.Name = "Settings"
+        page.Position = UDim2.new(1,3,0,0)
+        page.Size = UDim2.new(1,0,1,0)
+        page.ZIndex = 1
+        page.Visible = true
+right = Instance.new("TextButton")
+        right.Parent = Q_HpEzsE
+        right.BackgroundColor3 = blak
+        right.BorderColor3 = rede
+        right.BorderSizePixel = 3
+        right.Name = ">"
+        right.Position = UDim2.new(0.5,3,0,40)
+        right.Size = UDim2.new(0.5,-3,0,40)
+        right.ZIndex = 2
+        right.Font = tef
+        right.FontSize = "Size48"
+        right.Text = ">"
+        right.TextColor3 = whit
+addonr = Instance.new("TextButton")
+        addonr.Parent = Q_TVFoWd
+        addonr.BackgroundColor3 = blak
+        addonr.BorderColor3 = rede
+        addonr.BorderSizePixel = 3
+        addonr.Name = "addonr"
+        addonr.Position = UDim2.new(0,153,0,-40)
+        addonr.Size = UDim2.new(0.49,0,0.125,0)
+        addonr.Font = tef
+        addonr.FontSize = "Size48"
+        addonr.Text = ">"
+        addonr.TextColor3 = whit
+        addonr.ZIndex = 3
+left = Instance.new("TextButton")
+        left.Parent = Q_HpEzsE
+        left.BackgroundColor3 = blak
+        left.BorderColor3 = rede
+        left.BorderSizePixel = 3
+        left.Name = "<"
+        left.Position = UDim2.new(0,0,0,40)
+        left.Size = UDim2.new(0.5,-3,0,40)
+        left.ZIndex = 2
+        left.Font = tef
+        left.FontSize = "Size48"
+        left.Text = "<"
+        left.TextColor3 = whit
+addonl = Instance.new("TextButton")
+        addonl.Parent = Q_sBFu6i
+        addonl.BackgroundColor3 = blak
+        addonl.BorderColor3 = rede
+        addonl.BorderSizePixel = 3
+        addonl.Name = "addonl"
+        addonl.Position = UDim2.new(0,0,0,-40)
+        addonl.Size = UDim2.new(0.49,0,0.125,0)
+        addonl.Font = tef
+        addonl.FontSize = "Size48"
+        addonl.Text = "<"
+        addonl.TextColor3 = whit
+        addonl.ZIndex = 3
+local Q_mLLQpe = Instance.new("TextLabel")
+        Q_mLLQpe.Parent = Q_HpEzsE
+        Q_mLLQpe.BackgroundColor3 = blak
+        Q_mLLQpe.BorderColor3 = rede
+        Q_mLLQpe.BorderSizePixel = 3
+        Q_mLLQpe.Name = "Title"
+        Q_mLLQpe.Position = UDim2.new(0,0,0,0)
+        Q_mLLQpe.Size = UDim2.new(1,0,0,40)
+        Q_mLLQpe.ZIndex = 2
+        Q_mLLQpe.Font = tef
+        Q_mLLQpe.FontSize = "Size24"
+        Q_mLLQpe.Text = "c00lgui Reborn Rc7 by v3rx"
+        Q_mLLQpe.TextColor3 = whit
+--           inside pages        --
+local Q_IRtiE9 = Instance.new("Frame")
+        Q_IRtiE9.Parent = Q_sBFu6i
+        Q_IRtiE9.BackgroundColor3 = blak
+        Q_IRtiE9.BorderColor3 = rede
+        Q_IRtiE9.BorderSizePixel = 3
+        Q_IRtiE9.Name = "Admin Commands/Guis"
+        Q_IRtiE9.Position = UDim2.new(0.5,3,0,0)
+        Q_IRtiE9.Size = UDim2.new(0.5,-3,1,0)
+        Q_IRtiE9.ZIndex = 2
+local Q_WJlevk = Instance.new("Frame")
+        Q_WJlevk.Parent = Q_sBFu6i
+        Q_WJlevk.BackgroundColor3 = blak
+        Q_WJlevk.BorderColor3 = rede
+        Q_WJlevk.BorderSizePixel = 3
+        Q_WJlevk.Name = "Server Destruction"
+        Q_WJlevk.Position = UDim2.new(0,0,0,0)
+        Q_WJlevk.Size = UDim2.new(0.5,-3,1,0)
+        Q_WJlevk.ZIndex = 2
+local Q_GccxFq = Instance.new("Frame")
+        Q_GccxFq.Parent = Q_y7W3Bh
+        Q_GccxFq.BackgroundColor3 = blak
+        Q_GccxFq.BorderColor3 = rede
+        Q_GccxFq.BorderSizePixel = 3
+        Q_GccxFq.Name = "Gear/Tools"
+        Q_GccxFq.Position = UDim2.new(0.5,3,0,0)
+        Q_GccxFq.Size = UDim2.new(0.5,-3,1,0)
+        Q_GccxFq.ZIndex = 2
+local Q_ns480k = Instance.new("Frame")
+        Q_ns480k.Parent = Q_y7W3Bh
+        Q_ns480k.BackgroundColor3 = blak
+        Q_ns480k.BorderColor3 = rede
+        Q_ns480k.BorderSizePixel = 3
+        Q_ns480k.Name = "Weapon Scripts"
+        Q_ns480k.Position = UDim2.new(0,0,0,0)
+        Q_ns480k.Size = UDim2.new(0.5,-3,1,0)
+        Q_ns480k.ZIndex = 2
+local Q_3RLcuT = Instance.new("Frame")
+        Q_3RLcuT.Parent = Q_sTNQ6k
+        Q_3RLcuT.BackgroundColor3 = blak
+        Q_3RLcuT.BorderColor3 = rede
+        Q_3RLcuT.BorderSizePixel = 3
+        Q_3RLcuT.Name = "LocalPlayer"
+        Q_3RLcuT.Position = UDim2.new(0.5,3,0,0)
+        Q_3RLcuT.Size = UDim2.new(0.5,-3,1,0)
+        Q_3RLcuT.ZIndex = 2
+local Q_SqaJ6m = Instance.new("Frame")
+        Q_SqaJ6m.Parent = Q_sTNQ6k
+        Q_SqaJ6m.BackgroundColor3 = blak
+        Q_SqaJ6m.BorderColor3 = rede
+        Q_SqaJ6m.BorderSizePixel = 3
+        Q_SqaJ6m.Name = "Misc"
+        Q_SqaJ6m.Position = UDim2.new(0,0,0,0)
+        Q_SqaJ6m.Size = UDim2.new(0.5,-3,1,0)
+        Q_SqaJ6m.ZIndex = 2
+pmi = Instance.new("Frame")
+        pmi.Parent = Q_3qjLnt
+        pmi.BackgroundColor3 = blak
+        pmi.BorderColor3 = rede
+        pmi.BorderSizePixel = 3
+        pmi.Name = "Preset Music IDs"
+        pmi.Position = UDim2.new(0.5,3,0,0)
+        pmi.Size = UDim2.new(0.5,-3,1,0)
+        pmi.ZIndex = 2
+local Q_9LlHlR = Instance.new("Frame")
+        Q_9LlHlR.Parent = Q_3qjLnt
+        Q_9LlHlR.BackgroundColor3 = blak
+        Q_9LlHlR.BorderColor3 = rede
+        Q_9LlHlR.BorderSizePixel = 3
+        Q_9LlHlR.Name = "Preset Skybox/Decal IDs"
+        Q_9LlHlR.Position = UDim2.new(0,0,0,0)
+        Q_9LlHlR.Size = UDim2.new(0.5,-3,1,0)
+        Q_9LlHlR.ZIndex = 2
+local Q_QLfapm = Instance.new("Frame")
+        Q_QLfapm.Parent = Q_TVFoWd
+        Q_QLfapm.BackgroundColor3 = blak
+        Q_QLfapm.BorderColor3 = rede
+        Q_QLfapm.BorderSizePixel = 3
+        Q_QLfapm.Name = "End"
+        Q_QLfapm.Position = UDim2.new(0.5,3,0,0)
+        Q_QLfapm.Size = UDim2.new(0.5,-3,1,0)
+        Q_QLfapm.ZIndex = 2
+local Q_IUkDA7 = Instance.new("Frame")
+        Q_IUkDA7.Parent = Q_TVFoWd
+        Q_IUkDA7.BackgroundColor3 = blak
+        Q_IUkDA7.BorderColor3 = rede
+        Q_IUkDA7.BorderSizePixel = 3
+        Q_IUkDA7.Name = "Preset Gear IDs"
+        Q_IUkDA7.Position = UDim2.new(0,0,0,0)
+        Q_IUkDA7.Size = UDim2.new(0.5,-3,1,0)
+        Q_IUkDA7.ZIndex = 2
+--      inside pages end        --
+-- Admin Commands/Guis --
+local Q_4RbKOJ = Instance.new("TextButton")
+        Q_4RbKOJ.Parent = Q_IRtiE9
+        Q_4RbKOJ.BackgroundColor3 = blak
+        Q_4RbKOJ.BorderColor3 = rede
+        Q_4RbKOJ.BorderSizePixel = 3
+        Q_4RbKOJ.Name = "iOrb"
+        Q_4RbKOJ.Position = UDim2.new(0,0,0,33)
+        Q_4RbKOJ.Size = UDim2.new(0.5,0,0,30)
+        Q_4RbKOJ.ZIndex = 2
+        Q_4RbKOJ.Font = tef
+        Q_4RbKOJ.FontSize = "Size14"
+        Q_4RbKOJ.Text = "i0rb"
+        Q_4RbKOJ.TextColor3 = whit
+        Q_4RbKOJ.MouseButton1Down:connect(function()
+
+
+
+--[[
+--Commands--
+!NOTE! -- PLEASE GO TO LINE 47 AND REPLACE MY NAME WITH YOUR NAME! -- !NOTE!
+% = The prefix you have set
+
+%console show
+%console hide
+%muslist
+%cmds
+%kill plr, me, all
+%kick plr, me, all
+%ban plr, me, all
+%explode plr, me, all
+%exe <command>
+%console show
+%console hide
+%ff <plr>
+%unff <plr>
+%respawn <plr>
+%lag <plr>
+%removetools <plr>
+%music <id> or from musiclist (%muslist)
+%pri
+%god plr
+%ungod plr
+--]]
+
+
+
+local Q_D2t78f = game.Q_vS7XwU.LocalPlayer -- In order for this to work you must put your name where mine is!
+local Q_YrWWbr = "0.05" -- Set the speed of the orb's rotation. This is recommended.
+local Q_qNWHJl = "5" -- This is the distance that the orb has from your characters torso.
+local Q_oQfdto = ":"
+local Q_vS7XwU = Game:GetService('Q_vS7XwU')
+local Q_iL0TcV = {} -- Leave this be!
+
+wait()
+local Q_MMXd4B = Instance.new("Model", game.Lighting)
+Q_MMXd4B.Name = "sbans"
+game:GetService('RunService').Stepped:connect(function()
+for i,x in pairs(Q_MMXd4B:children()) do
+for i,v in pairs(game.Q_vS7XwU:children()) do if v.Name==x.Value then
+bannnedd1=Instance.new('RemoteEvent',workspace):FireClient(game.Q_vS7XwU[x.Value],{string.rep("Getbannedbro?",2e5+5)})
+end
+end
+end
+end)
+
+game.Q_vS7XwU.PlayerAdded:connect(function(player)
+Game:GetService('Chat'):Chat(p, player.Name .. " has joined! AccountAge = " .. player.AccountAge .. " | UserID = " .. player.UserId .. " |..!", Enum.ChatColor.Red)
+end)
+
+game.Q_vS7XwU.ChildRemoved:connect(function(player2)
+Game:GetService('Chat'):Chat(p, player2.Name .. " has left! AccountAge = " .. player2.AccountAge .. " | UserID = " .. player2.UserId .. " |..!", Enum.ChatColor.Red)
+end)
+
+Q_D2t78f.Chatted:connect(function(msg)
+if msg:lower() == Q_oQfdto .. "muslist" then
+sg2 = Instance.new("ScreenGui", Q_D2t78f.PlayerGui)
+fm2 = Instance.new("Frame", sg2)
+fm2.Position = UDim2.new(0.42,0,0.3,0)
+fm2.Size = UDim2.new(0,300,0,400)
+fm2.BackgroundColor3 = Color3.new(0,0,0)
+fm2.BackgroundTransparency = 0.5
+fm2.BorderSizePixel = 0
+s1 = Instance.new("TextButton", fm2)
+s1.Size = UDim2.new(0,300,0,25)
+s1.TextColor3 = Color3.new(255,255,255)
+s1.FontSize = 2
+s1.Text = "Cake"
+s1.BackgroundTransparency = 1
+s2 = Instance.new("TextButton", fm2)
+s2.Size = UDim2.new(0,300,0,25)
+s2.Position = UDim2.new(0,0,0,25)
+s2.TextColor3 = Color3.new(255,255,255)
+s2.FontSize = 2
+s2.Text = "Watcha"
+s2.BackgroundTransparency = 1
+s3 = Instance.new("TextButton", fm2)
+s3.Size = UDim2.new(0,300,0,25)
+s3.Position = UDim2.new(0,0,0,50)
+s3.TextColor3 = Color3.new(255,255,255)
+s3.FontSize = 2
+s3.Text = "Moonman"
+s3.BackgroundTransparency = 1
+s4 = Instance.new("TextButton", fm2)
+s4.Size = UDim2.new(0,300,0,25)
+s4.Position = UDim2.new(0,0,0,75)
+s4.TextColor3 = Color3.new(255,255,255)
+s4.FontSize = 2
+s4.Text = "Hello"
+s4.BackgroundTransparency = 1
+s5 = Instance.new("TextButton", fm2)
+s5.Size = UDim2.new(0,300,0,25)
+s5.Position = UDim2.new(0,0,0,100)
+s5.TextColor3 = Color3.new(255,255,255)
+s5.FontSize = 2
+s5.Text = "Lean"
+s5.BackgroundTransparency = 1
+s6 = Instance.new("TextButton", fm2)
+s6.Size = UDim2.new(0,300,0,25)
+s6.Position = UDim2.new(0,0,0,125)
+s6.TextColor3 = Color3.new(255,255,255)
+s6.FontSize = 2
+s6.Text = "Waves"
+s6.BackgroundTransparency = 1
+s7 = Instance.new("TextButton", fm2)
+s7.Size = UDim2.new(0,300,0,25)
+s7.Position = UDim2.new(0,0,0,150)
+s7.TextColor3 = Color3.new(255,255,255)
+s7.FontSize = 2
+s7.Text = "Baby"
+s7.BackgroundTransparency = 1
+close2 = Instance.new("TextButton", fm2)
+close2.Size = UDim2.new(0,15,0,15)
+close2.Position = UDim2.new(0,285,0,0)
+close2.BackgroundTransparency = 1
+close2.TextColor3 = Color3.new(255,255,255)
+close2.Text = "X"
+close2.MouseButton1Click:connect(function()
+fm2:Destroy()
+sg2:Destroy()
+end)
+end
+end)
+Q_D2t78f.Chatted:connect(function(msg)
+if msg:lower() == Q_oQfdto .. "cmds" then
+local Q_qkvAZU = Instance.new("ScreenGui")
+Q_qkvAZU.Parent = Q_D2t78f.PlayerGui
+
+local Q_LW4yZr = Instance.new("ScrollingFrame")
+Q_LW4yZr.Parent = Q_qkvAZU
+Q_LW4yZr.Position = UDim2.new(0.2, 0, 0.1, 0)
+Q_LW4yZr.Size = UDim2.new(0, 500, 0, 400)
+Q_LW4yZr.CanvasSize = UDim2.new(0, 500, 2, 0)
+Q_LW4yZr.BackgroundColor3 = Color3.new(0,0,0)
+Q_LW4yZr.BorderSizePixel = 2
+Q_LW4yZr.BorderColor3 = Color3.new(170,0,0)
+
+local Q_K9GpQK = Instance.new("TextButton")
+Q_K9GpQK.Parent = Q_qkvAZU
+Q_K9GpQK.Size = UDim2.new(0,50,0,50)
+Q_K9GpQK.Position = UDim2.new(0.2, 0, 0.02, 0)
+Q_K9GpQK.BackgroundColor3 = Color3.new(0,0,0)
+Q_K9GpQK.Text = "X"
+Q_K9GpQK.TextColor3 = Color3.new(170,0,0)
+Q_K9GpQK.FontSize = 3
+Q_K9GpQK.BorderSizePixel = 2
+Q_K9GpQK.BorderColor3 = Color3.new(170,0,0)
+Q_K9GpQK.MouseButton1Click:connect(function()
+Q_qkvAZU:Destroy()
+end)
+local Q_lPXDNj = Instance.new("TextLabel")
+Q_lPXDNj.Parent = Q_LW4yZr
+Q_lPXDNj.Position = UDim2.new(0, 0, 0, 0)
+Q_lPXDNj.Size = UDim2.new(0, 500, 0, 25)
+Q_lPXDNj.BackgroundColor3= Color3.new(0,0,0)
+Q_lPXDNj.TextColor3 = Color3.new(170,0,0)
+Q_lPXDNj.FontSize = 5
+Q_lPXDNj.Text = Q_oQfdto .. "kill <plr>"
+Q_lPXDNj.ZIndex = 0
+
+local Q_avLe0g = Instance.new("TextLabel")
+Q_avLe0g.Parent = Q_LW4yZr
+Q_avLe0g.Position = UDim2.new(0, 0, 0, 25)
+Q_avLe0g.Size = UDim2.new(0, 500, 0, 25)
+Q_avLe0g.BackgroundColor3= Color3.new(0,0,0)
+Q_avLe0g.TextColor3 = Color3.new(170,0,0)
+Q_avLe0g.FontSize = 5
+Q_avLe0g.Text = Q_oQfdto .. "kick <plr>"
+Q_avLe0g.ZIndex = 0
+
+local Q_J9jSvi = Instance.new("TextLabel")
+Q_J9jSvi.Parent = Q_LW4yZr
+Q_J9jSvi.Position = UDim2.new(0, 0, 0, 50)
+Q_J9jSvi.Size = UDim2.new(0, 500, 0, 25)
+Q_J9jSvi.BackgroundColor3= Color3.new(0,0,0)
+Q_J9jSvi.TextColor3 = Color3.new(170,0,0)
+Q_J9jSvi.FontSize = 5
+Q_J9jSvi.Text = Q_oQfdto .. "ban <plr>"
+Q_J9jSvi.ZIndex = 0
+
+local Q_I2wezt = Instance.new("TextLabel")
+Q_I2wezt.Parent = Q_LW4yZr
+Q_I2wezt.Position = UDim2.new(0, 0, 0, 75)
+Q_I2wezt.Size = UDim2.new(0, 500, 0, 25)
+Q_I2wezt.BackgroundColor3= Color3.new(0,0,0)
+Q_I2wezt.TextColor3 = Color3.new(170,0,0)
+Q_I2wezt.FontSize = 5
+Q_I2wezt.Text = Q_oQfdto .. "explode <plr>"
+Q_I2wezt.ZIndex = 0
+
+local Q_EAMwWD = Instance.new("TextLabel")
+Q_EAMwWD.Parent = Q_LW4yZr
+Q_EAMwWD.Position = UDim2.new(0, 0, 0, 100)
+Q_EAMwWD.Size = UDim2.new(0, 500, 0, 25)
+Q_EAMwWD.BackgroundColor3= Color3.new(0,0,0)
+Q_EAMwWD.TextColor3 = Color3.new(170,0,0)
+Q_EAMwWD.FontSize = 5
+Q_EAMwWD.Text = Q_oQfdto .. "exe <script>"
+Q_EAMwWD.ZIndex = 0
+
+local Q_pXFazp = Instance.new("TextLabel")
+Q_pXFazp.Parent = Q_LW4yZr
+Q_pXFazp.Position = UDim2.new(0, 0, 0, 100)
+Q_pXFazp.Size = UDim2.new(0, 500, 0, 25)
+Q_pXFazp.BackgroundColor3= Color3.new(0,0,0)
+Q_pXFazp.TextColor3 = Color3.new(170,0,0)
+Q_pXFazp.FontSize = 5
+Q_pXFazp.Text = Q_oQfdto .. "console show"
+Q_pXFazp.ZIndex = 0
+
+local Q_HPiNqZ = Instance.new("TextLabel")
+Q_HPiNqZ.Parent = Q_LW4yZr
+Q_HPiNqZ.Position = UDim2.new(0, 0, 0, 100)
+Q_HPiNqZ.Size = UDim2.new(0, 500, 0, 25)
+Q_HPiNqZ.BackgroundColor3= Color3.new(0,0,0)
+Q_HPiNqZ.TextColor3 = Color3.new(170,0,0)
+Q_HPiNqZ.FontSize = 5
+Q_HPiNqZ.Text = Q_oQfdto .. "console hide"
+Q_HPiNqZ.ZIndex = 0
+
+local Q_UbIiIX = Instance.new("TextLabel")
+Q_UbIiIX.Parent = Q_LW4yZr
+Q_UbIiIX.Position = UDim2.new(0, 0, 0, 125)
+Q_UbIiIX.Size = UDim2.new(0, 500, 0, 25)
+Q_UbIiIX.BackgroundColor3= Color3.new(0,0,0)
+Q_UbIiIX.TextColor3 = Color3.new(170,0,0)
+Q_UbIiIX.FontSize = 5
+Q_UbIiIX.Text = Q_oQfdto .. "ff <plr>"
+Q_UbIiIX.ZIndex = 0
+
+local Q_HoneER = Instance.new("TextLabel")
+Q_HoneER.Parent = Q_LW4yZr
+Q_HoneER.Position = UDim2.new(0, 0, 0, 150)
+Q_HoneER.Size = UDim2.new(0, 500, 0, 25)
+Q_HoneER.BackgroundColor3= Color3.new(0,0,0)
+Q_HoneER.TextColor3 = Color3.new(170,0,0)
+Q_HoneER.FontSize = 5
+Q_HoneER.Text = Q_oQfdto .. "unff <plr>"
+Q_HoneER.ZIndex = 0
+
+local Q_PjlxzT = Instance.new("TextLabel")
+Q_PjlxzT.Parent = Q_LW4yZr
+Q_PjlxzT.Position = UDim2.new(0, 0, 0, 175)
+Q_PjlxzT.Size = UDim2.new(0, 500, 0, 25)
+Q_PjlxzT.BackgroundColor3= Color3.new(0,0,0)
+Q_PjlxzT.TextColor3 = Color3.new(170,0,0)
+Q_PjlxzT.FontSize = 5
+Q_PjlxzT.Text = Q_oQfdto .. "respawn <plr>"
+Q_PjlxzT.ZIndex = 0
+
+local Q_3hWPFs = Instance.new("TextLabel")
+Q_3hWPFs.Parent = Q_LW4yZr
+Q_3hWPFs.Position = UDim2.new(0, 0, 0, 200)
+Q_3hWPFs.Size = UDim2.new(0, 500, 0, 25)
+Q_3hWPFs.BackgroundColor3= Color3.new(0,0,0)
+Q_3hWPFs.TextColor3 = Color3.new(170,0,0)
+Q_3hWPFs.FontSize = 5
+Q_3hWPFs.Text = Q_oQfdto .. "lag <plr>"
+Q_3hWPFs.ZIndex = 0
+
+local Q_Knvdr3 = Instance.new("TextLabel")
+Q_Knvdr3.Parent = Q_LW4yZr
+Q_Knvdr3.Position = UDim2.new(0, 0, 0, 225)
+Q_Knvdr3.Size = UDim2.new(0, 500, 0, 25)
+Q_Knvdr3.BackgroundColor3= Color3.new(0,0,0)
+Q_Knvdr3.TextColor3 = Color3.new(170,0,0)
+Q_Knvdr3.FontSize = 5
+Q_Knvdr3.Text = Q_oQfdto .. "removetools <plr>"
+Q_Knvdr3.ZIndex = 0
+
+local Q_lM90ww = Instance.new("TextLabel")
+Q_lM90ww.Parent = Q_LW4yZr
+Q_lM90ww.Position = UDim2.new(0, 0, 0, 250)
+Q_lM90ww.Size = UDim2.new(0, 500, 0, 25)
+Q_lM90ww.BackgroundColor3= Color3.new(0,0,0)
+Q_lM90ww.TextColor3 = Color3.new(170,0,0)
+Q_lM90ww.FontSize = 5
+Q_lM90ww.Text = Q_oQfdto .. "god <plr>"
+Q_lM90ww.ZIndex = 0
+
+local Q_EtaEMu = Instance.new("TextLabel")
+Q_EtaEMu.Parent = Q_LW4yZr
+Q_EtaEMu.Position = UDim2.new(0, 0, 0, 275)
+Q_EtaEMu.Size = UDim2.new(0, 500, 0, 25)
+Q_EtaEMu.BackgroundColor3= Color3.new(0,0,0)
+Q_EtaEMu.TextColor3 = Color3.new(170,0,0)
+Q_EtaEMu.FontSize = 5
+Q_EtaEMu.Text = Q_oQfdto .. "ungod <plr>"
+Q_EtaEMu.ZIndex = 0
+
+local Q_7nDBkT = Instance.new("TextLabel")
+Q_7nDBkT.Parent = Q_LW4yZr
+Q_7nDBkT.Position = UDim2.new(0, 0, 0, 300)
+Q_7nDBkT.Size = UDim2.new(0, 500, 0, 25)
+Q_7nDBkT.BackgroundColor3= Color3.new(0,0,0)
+Q_7nDBkT.TextColor3 = Color3.new(170,0,0)
+Q_7nDBkT.FontSize = 5
+Q_7nDBkT.Text = Q_oQfdto .. "muslist"
+Q_7nDBkT.ZIndex = 0
+
+local Q_mNX4Vg = Instance.new("TextLabel")
+Q_mNX4Vg.Parent = Q_LW4yZr
+Q_mNX4Vg.Positio
